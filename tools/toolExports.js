@@ -1,1 +1,3 @@
-//where I put middleware
+const {checkSecret} = require('./checkSecret');
+
+module.exports = {checkSecret};
