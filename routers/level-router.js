@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 const jwtAuth = passport.authenticate('jwt', { session: false });
-const {Level} = require('../models/level');
+const {Level} = require('../models/Level');
 const {getAllLevels} = require('./interfaces/level-interface');
 
 router.use(jwtAuth);
